@@ -1,0 +1,2259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Unit 1 | Full Stack Development Basics</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ============================= -->
+    <!-- SIDEBAR -->
+    <!-- ============================= -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">FS</div>
+
+            <div>
+                <h2>FullStack</h2>
+                <span>Exam Notes</span>
+            </div>
+        </div>
+
+        <nav>
+
+            <p class="nav-title">UNIT 1</p>
+
+            <a href="#intro">🚀 Full Stack</a>
+            <a href="#developers">👨‍💻 Developers</a>
+            <a href="#architecture">🏗️ 3-Tier Architecture</a>
+            <a href="#stacks">🧩 Technology Stacks</a>
+            <a href="#json">📦 JSON</a>
+            <a href="#rest">🌐 REST API</a>
+            <a href="#http">⚡ HTTP</a>
+            <a href="#revision">🔥 Quick Revision</a>
+            <a href="#quiz">🧠 Quiz</a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <button id="themeToggle" class="theme-btn">
+                🌙 Dark Mode
+            </button>
+
+            <div class="progress-box">
+                <span>Study Progress</span>
+
+                <div class="progress-track">
+                    <div id="progressBar"></div>
+                </div>
+
+                <small id="progressText">0% completed</small>
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ============================= -->
+    <!-- MAIN CONTENT -->
+    <!-- ============================= -->
+
+    <main class="main">
+
+        <!-- MOBILE HEADER -->
+
+        <header class="mobile-header">
+
+            <button id="menuBtn">☰</button>
+
+            <div>
+                <strong>Unit 1</strong>
+                <span>Full Stack Basics</span>
+            </div>
+
+        </header>
+
+
+        <!-- ============================= -->
+        <!-- HERO -->
+        <!-- ============================= -->
+
+        <section class="hero" id="intro">
+
+            <div class="hero-content">
+
+                <div class="eyebrow">
+                    UNIT — 01
+                </div>
+
+                <h1>
+                    Full Stack
+                    <span>Development</span>
+                    Basics
+                </h1>
+
+                <p>
+                    Complete exam-focused notes in a colorful,
+                    easy-to-revise format.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#architecture" class="primary-btn">
+                        Start Learning →
+                    </a>
+
+                    <a href="#revision" class="secondary-btn">
+                        Quick Revision
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-visual">
+
+                <div class="floating-card card-one">
+                    <span>HTML</span>
+                    <b>Structure</b>
+                </div>
+
+                <div class="floating-card card-two">
+                    <span>JS</span>
+                    <b>Logic</b>
+                </div>
+
+                <div class="floating-card card-three">
+                    <span>DB</span>
+                    <b>Data</b>
+                </div>
+
+                <div class="stack-orbit">
+
+                    <div class="orbit-center">
+                        FULL<br>STACK
+                    </div>
+
+                    <div class="orbit-item orbit-1">UI</div>
+                    <div class="orbit-item orbit-2">API</div>
+                    <div class="orbit-item orbit-3">DB</div>
+                    <div class="orbit-item orbit-4">JS</div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- SEARCH -->
+        <!-- ============================= -->
+
+        <section class="search-section">
+
+            <div class="search-box">
+
+                <span>🔍</span>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search any topic... e.g. JSON, REST, MERN"
+                >
+
+            </div>
+
+            <div class="topic-count">
+                <b id="topicCount">0</b> topics
+            </div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- FULL STACK -->
+        <!-- ============================= -->
+
+        <section class="content-section searchable" id="developers">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-number">01</span>
+
+                    <h2>
+                        What is Full Stack Development?
+                    </h2>
+                </div>
+
+                <span class="importance">⭐⭐⭐ Important</span>
+
+            </div>
+
+
+            <div class="definition-card">
+
+                <div class="definition-icon">
+                    🚀
+                </div>
+
+                <div>
+
+                    <h3>Definition</h3>
+
+                    <p>
+                        Full Stack Development is the process of
+                        designing, creating, testing and deploying
+                        a complete web application from start to finish.
+                    </p>
+
+                    <p>
+                        It involves <b>front-end</b>,
+                        <b>back-end</b> and <b>database</b> development.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="three-cards">
+
+                <article class="mini-card front">
+
+                    <div class="mini-icon">🎨</div>
+
+                    <h3>Front-End</h3>
+
+                    <p>
+                        The part of the application that
+                        the user sees and interacts with.
+                    </p>
+
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                </article>
+
+
+                <article class="mini-card back">
+
+                    <div class="mini-icon">⚙️</div>
+
+                    <h3>Back-End</h3>
+
+                    <p>
+                        Handles business logic, application
+                        workflows and request-response processing.
+                    </p>
+
+                    <div class="tags">
+                        <span>Java</span>
+                        <span>Python</span>
+                        <span>Node.js</span>
+                    </div>
+
+                </article>
+
+
+                <article class="mini-card database">
+
+                    <div class="mini-icon">🗄️</div>
+
+                    <h3>Database</h3>
+
+                    <p>
+                        Stores application data such as
+                        users, products and transactions.
+                    </p>
+
+                    <div class="tags">
+                        <span>MySQL</span>
+                        <span>MongoDB</span>
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <div class="example-box">
+
+                <div class="example-title">
+                    💡 Simple Example
+                </div>
+
+                <p>
+                    In an online shopping website:
+                </p>
+
+                <ul>
+                    <li>Product page → <b>Front-End</b></li>
+                    <li>Order processing → <b>Back-End</b></li>
+                    <li>Customer/order data → <b>Database</b></li>
+                </ul>
+
+            </div>
+
+
+            <div class="diagram-note">
+                📌 <b>Diagram to see:</b> Page 2 —
+                Full Stack Development components
+            </div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- FULL STACK DEVELOPER -->
+        <!-- ============================= -->
+
+        <section class="content-section searchable">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-number">02</span>
+                    <h2>Full Stack Developer</h2>
+                </div>
+
+            </div>
+
+
+            <div class="info-grid">
+
+                <div class="info-card">
+
+                    <span>🧠</span>
+
+                    <h3>Knowledge</h3>
+
+                    <p>
+                        Understands the complete technology stack
+                        used to build an end-to-end application.
+                    </p>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <span>🛠️</span>
+
+                    <h3>Responsibilities</h3>
+
+                    <p>
+                        Select technologies, develop and test
+                        front-end and back-end and write clean code.
+                    </p>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <span>📈</span>
+
+                    <h3>Technology Decisions</h3>
+
+                    <p>
+                        Must judge whether the selected technologies
+                        are suitable for the project.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="callout">
+
+                <span>🧠</span>
+
+                <div>
+                    <strong>Remember</strong>
+
+                    <p>
+                        A full-stack developer understands how
+                        different parts of an application work together.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- FRONT BACK FULL -->
+        <!-- ============================= -->
+
+        <section class="content-section searchable">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-number">03</span>
+                    <h2>Front-End vs Back-End vs Full Stack</h2>
+                </div>
+
+            </div>
+
+
+            <div class="comparison-table">
+
+                <div class="table-row table-head">
+
+                    <div>Front-End</div>
+                    <div>Back-End</div>
+                    <div>Full Stack</div>
+
+                </div>
+
+
+                <div class="table-row">
+
+                    <div>
+                        🎨 UI and user experience
+                    </div>
+
+                    <div>
+                        ⚙️ Business logic
+                    </div>
+
+                    <div>
+                        🚀 Complete workflow
+                    </div>
+
+                </div>
+
+
+                <div class="table-row">
+
+                    <div>
+                        HTML, CSS, JavaScript
+                    </div>
+
+                    <div>
+                        Java, Python, JavaScript, .NET
+                    </div>
+
+                    <div>
+                        Front + Back technologies
+                    </div>
+
+                </div>
+
+
+                <div class="table-row">
+
+                    <div>
+                        Navigation, forms, visual effects
+                    </div>
+
+                    <div>
+                        Security, performance, scalability
+                    </div>
+
+                    <div>
+                        End-to-end development
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="memory-card">
+
+                🧠 <b>Easy Trick:</b>
+
+                <span>FRONT = What I SEE</span>
+
+                <span>BACK = What happens BEHIND</span>
+
+                <span>FULL = BOTH</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- SOFTWARE ENGINEER -->
+        <!-- ============================= -->
+
+        <section class="content-section searchable">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-number">04</span>
+                    <h2>Software Engineer vs Full Stack Developer</h2>
+                </div>
+
+            </div>
+
+
+            <div class="compare-two">
+
+                <div>
+
+                    <h3>👨‍💻 Software Engineer</h3>
+
+                    <p>
+                        Software engineering is a general term.
+                        A software engineer may work on a specific
+                        module or technology.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <h3>🚀 Full Stack Developer</h3>
+
+                    <p>
+                        Full Stack Development is part of software
+                        engineering and requires front-end and
+                        back-end knowledge for end-to-end applications.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- ADVANTAGES -->
+        <!-- ============================= -->
+
+        <section class="content-section searchable">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-number">05</span>
+                    <h2>Advantages & Disadvantages</h2>
+                </div>
+
+            </div>
+
+
+            <div class="pros-cons">
+
+                <div class="pros">
+
+                    <h3>✅ Advantages</h3>
+
+                    <ul>
+                        <li>Complete project ownership</li>
+                        <li>Saves time and cost</li>
+                        <li>Faster bug fixing</li>
+                        <li>Easy knowledge transfer</li>
+                        <li>Better division of work</li>
+                        <li>Useful in cross-functional Agile teams</li>
+                        <li>Can build websites independently</li>
+                    </ul>
+
+                </div>
+
+
+                <div class="cons">
+
+                    <h3>⚠️ Disadvantages</h3>
+
+                    <ul>
+                        <li>Technology choice can be wrong</li>
+                        <li>Depends heavily on developer skills</li>
+                        <li>Key-person risk</li>
+                        <li>Becoming increasingly complex</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- 3 TIER -->
+        <!-- ============================= -->
+
+        <section class="content-section searchable" id="architecture">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-number">06</span>
+
+                    <h2>
+                        3-Tier Architecture
+                    </h2>
+
+                </div>
+
+                <span class="importance">
+                    ⭐⭐⭐⭐⭐ Must Know
+                </span>
+
+            </div>
+
+
+            <div class="definition-card purple">
+
+                <div class="definition-icon">
+                    🏗️
+                </div>
+
+                <div>
+
+                    <h3>Definition</h3>
+
+                    <p>
+                        3-Tier Architecture divides an application
+                        into three separate layers based on their
+                        responsibilities.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="architecture-flow">
+
+                <div class="architecture-box presentation">
+
+                    <span>01</span>
+
+                    <h3>Presentation</h3>
+
+                    <p>UI & user interaction</p>
+
+                </div>
+
+
+                <div class="flow-arrow">→</div>
+
+
+                <div class="architecture-box business">
+
+                    <span>02</span>
+
+                    <h3>Business</h3>
+
+                    <p>Rules & application logic</p>
+
+                </div>
+
+
+                <div class="flow-arrow">→</div>
+
+
+                <div class="architecture-box data">
+
+                    <span>03</span>
+
+                    <h3>Data Access</h3>
+
+                    <p>Database communication</p>
+
+                </div>
+
+
+                <div class="flow-arrow">→</div>
+
+
+                <div class="architecture-box db">
+
+                    <span>🗄️</span>
+
+                    <h3>Database</h3>
+
+                    <p>Stores data</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="layer-grid">
+
+                <div class="layer-card">
+
+                    <div class="layer-number">01</div>
+
+                    <h3>Presentation Layer</h3>
+
+                    <p>
+                        Handles UI and interaction with the user.
+                    </p>
+
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                </div>
+
+
+                <div class="layer-card">
+
+                    <div class="layer-number">02</div>
+
+                    <h3>Business Layer</h3>
+
+                    <p>
+                        Contains business rules and application logic.
+                    </p>
+
+                    <div class="tags">
+                        <span>Java</span>
+                        <span>Python</span>
+                    </div>
+
+                </div>
+
+
+                <div class="layer-card">
+
+                    <div class="layer-number">03</div>
+
+                    <h3>Data Access Layer</h3>
+
+                    <p>
+                        Communicates with the database using
+                        data access operations.
+                    </p>
+
+                    <div class="tags">
+                        <span>SQL</span>
+                        <span>DDL</span>
+                        <span>DML</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="danger-card">
+
+                🚨 <b>VERY IMPORTANT RULE:</b>
+
+                <p>
+                    Presentation cannot directly access the Database.
+                    Business cannot directly access the Database.
+                </p>
+
+                <strong>
+                    Correct flow: Presentation → Business → Data Access → Database
+                </strong>
+
+            </div>
+
+
+            <div class="diagram-note">
+
+                📌 <b>Diagrams:</b>
+                Page 7 — 3-Tier Architecture<br>
+                Page 9 — Requests & Responses
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- RULES -->
+        <!-- ============================= -->
+
+        <section class="content-section searchable">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-number">07</span>
+                    <h2>Rules of 3-Tier Architecture</h2>
+                </div>
+
+            </div>
+
+
+            <div class="rules">
+
+                <div>
+                    <b>01</b>
+                    Each layer should be maintained separately.
+                </div>
+
+                <div>
+                    <b>02</b>
+                    Each layer contains only its own type of logic.
+                </div>
+
+                <div>
+                    <b>03</b>
+                    Presentation communicates only with Business.
+                </div>
+
+                <div>
+                    <b>04</b>
+                    Business communicates with Presentation and Data Access.
+                </div>
+
+                <div>
+                    <b>05</b>
+                    Data Access communicates with Business and DBMS.
+                </div>
+
+                <div>
+                    <b>06</b>
+                    Layers should be unaware of the internal workings of other layers.
+                </div>
+
+            </div>
+
+
+            <div class="memory-card">
+
+                🧠 <b>Remember:</b>
+
+                <span>P → B → D</span>
+
+                <small>
+                    Presentation → Business → Data Access
+                </small>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- STACKS -->
+        <!-- ============================= -->
+
+        <section class="content-section searchable" id="stacks">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-number">08</span>
+                    <h2>Popular Technology Stacks</h2>
+                </div>
+
+                <span class="importance">
+                    ⭐⭐⭐ Important
+                </span>
+
+            </div>
+
+
+            <div class="stack-grid">
+
+
+                <article class="stack-card lamp">
+
+                    <div class="stack-logo">LAMP</div>
+
+                    <h3>LAMP Stack</h3>
+
+                    <div class="stack-chain">
+                        Linux → Apache → MySQL → PHP
+                    </div>
+
+                    <p>
+                        A classic, open-source stack commonly
+                        used for web applications.
+                    </p>
+
+                </article>
+
+
+                <article class="stack-card mean">
+
+                    <div class="stack-logo">MEAN</div>
+
+                    <h3>MEAN Stack</h3>
+
+                    <div class="stack-chain">
+                        MongoDB → Express → Angular → Node
+                    </div>
+
+                    <p>
+                        End-to-end JavaScript stack using Angular
+                        for the front-end.
+                    </p>
+
+                </article>
+
+
+                <article class="stack-card mern">
+
+                    <div class="stack-logo">MERN</div>
+
+                    <h3>MERN Stack</h3>
+
+                    <div class="stack-chain">
+                        MongoDB → Express → React → Node
+                    </div>
+
+                    <p>
+                        Similar to MEAN, but React replaces Angular.
+                    </p>
+
+                </article>
+
+
+                <article class="stack-card rails">
+
+                    <div class="stack-logo">RoR</div>
+
+                    <h3>Ruby on Rails</h3>
+
+                    <p>
+                        Ruby-based server-side framework using
+                        MVC architecture.
+                    </p>
+
+                </article>
+
+
+                <article class="stack-card dotnet">
+
+                    <div class="stack-logo">.NET</div>
+
+                    <h3>.NET</h3>
+
+                    <p>
+                        Open-source platform for modern scalable
+                        web, desktop and mobile applications.
+                    </p>
+
+                </article>
+
+
+                <article class="stack-card django">
+
+                    <div class="stack-logo">DJ</div>
+
+                    <h3>Python-Django</h3>
+
+                    <p>
+                        High-level Python framework designed for
+                        rapid web development.
+                    </p>
+
+                </article>
+
+
+                <article class="stack-card flutter">
+
+                    <div class="stack-logo">FL</div>
+
+                    <h3>Flutter</h3>
+
+                    <p>
+                        Google's framework for multi-platform
+                        applications using Dart.
+                    </p>
+
+                </article>
+
+
+                <article class="stack-card reactnative">
+
+                    <div class="stack-logo">RN</div>
+
+                    <h3>React Native</h3>
+
+                    <p>
+                        React-based framework for native Android
+                        and iOS applications.
+                    </p>
+
+                </article>
+
+
+                <article class="stack-card javaee">
+
+                    <div class="stack-logo">JE</div>
+
+                    <h3>Java EE</h3>
+
+                    <p>
+                        Platform for enterprise applications,
+                        distributed computing and web services.
+                    </p>
+
+                </article>
+
+
+                <article class="stack-card serverless">
+
+                    <div class="stack-logo">☁️</div>
+
+                    <h3>Serverless</h3>
+
+                    <p>
+                        Developers focus on application code while
+                        cloud providers manage infrastructure.
+                    </p>
+
+                </article>
+
+            </div>
+
+
+            <div class="mega-memory">
+
+                <h3>🧠 MERN vs MEAN</h3>
+
+                <div>
+
+                    <span>MEAN</span>
+
+                    <b>Angular</b>
+
+                    <span>vs</span>
+
+                    <span>MERN</span>
+
+                    <b>React</b>
+
+                </div>
+
+            </div>
+
+
+            <div class="diagram-note">
+                📌 <b>Stack information:</b> Pages 10–14
+            </div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- JSON -->
+        <!-- ============================= -->
+
+        <section class="content-section searchable" id="json">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-number">09</span>
+                    <h2>JSON</h2>
+                </div>
+
+                <span class="importance">
+                    ⭐⭐⭐⭐⭐ Must Know
+                </span>
+
+            </div>
+
+
+            <div class="definition-card json-card">
+
+                <div class="definition-icon">
+                    📦
+                </div>
+
+                <div>
+
+                    <h3>JavaScript Object Notation</h3>
+
+                    <p>
+                        JSON is a lightweight, text-based,
+                        human-readable and language-independent
+                        data-interchange format.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="json-visual">
+
+                <div class="json-box">
+
+<pre>{
+  <span>"name"</span>: <em>"Rahul"</em>,
+  <span>"age"</span>: <strong>20</strong>,
+  <span>"student"</span>: <b>true</b>
+}</pre>
+
+                </div>
+
+                <div class="json-explain">
+
+                    <div>
+                        <b>{ }</b>
+                        <span>Object</span>
+                    </div>
+
+                    <div>
+                        <b>[ ]</b>
+                        <span>Array</span>
+                    </div>
+
+                    <div>
+                        <b>:</b>
+                        <span>Key → Value</span>
+                    </div>
+
+                    <div>
+                        <b>,</b>
+                        <span>Separator</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <h3 class="subheading">
+                JSON Features
+            </h3>
+
+
+            <div class="feature-pills">
+
+                <span>Simplicity</span>
+                <span>Openness</span>
+                <span>Self-Describing</span>
+                <span>Internationalization</span>
+                <span>Extensibility</span>
+                <span>Interoperability</span>
+
+            </div>
+
+
+            <div class="why-json">
+
+                <h3>Why use JSON?</h3>
+
+                <div>
+
+                    <span>⚡</span>
+
+                    <p>
+                        <b>Less Verbose:</b>
+                        More compact than XML.
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <span>🚀</span>
+
+                    <p>
+                        <b>Faster:</b>
+                        Requires less data and parsing overhead.
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <span>👀</span>
+
+                    <p>
+                        <b>Readable:</b>
+                        Simple and straightforward structure.
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <span>🌐</span>
+
+                    <p>
+                        <b>Network Communication:</b>
+                        Commonly used to transmit data between
+                        server and web application.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="diagram-note">
+                📌 <b>JSON communication diagram:</b> Page 16
+            </div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- JSON DATA TYPES -->
+        <!-- ============================= -->
+
+        <section class="content-section searchable">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-number">10</span>
+                    <h2>JSON Data Types</h2>
+                </div>
+
+            </div>
+
+
+            <div class="data-type-grid">
+
+                <div>
+                    <b>String</b>
+                    <code>"student"</code>
+                </div>
+
+                <div>
+                    <b>Number</b>
+                    <code>121</code>
+                </div>
+
+                <div>
+                    <b>Boolean</b>
+                    <code>true</code>
+                </div>
+
+                <div>
+                    <b>Null</b>
+                    <code>null</code>
+                </div>
+
+                <div>
+                    <b>Object</b>
+                    <code>{ }</code>
+                </div>
+
+                <div>
+                    <b>Array</b>
+                    <code>[ ]</code>
+                </div>
+
+            </div>
+
+
+            <div class="object-array">
+
+                <div class="oa-card">
+
+                    <h3>Object</h3>
+
+                    <p>
+                        Enclosed in curly brackets
+                        <b>{ }</b> and contains key/value pairs.
+                    </p>
+
+<pre>{
+  "name": "Jack",
+  "age": 25
+}</pre>
+
+                </div>
+
+
+                <div class="oa-card">
+
+                    <h3>Array</h3>
+
+                    <p>
+                        Enclosed in square brackets
+                        <b>[ ]</b> and stores a list of values.
+                    </p>
+
+<pre>[
+  "Apple",
+  "Mango",
+  "Banana"
+]</pre>
+
+                </div>
+
+            </div>
+
+
+            <div class="code-example">
+
+                <div class="code-header">
+                    Array of Objects
+                </div>
+
+<pre>{
+  "employees": [
+    {
+      "name": "Ram",
+      "age": 23
+    },
+    {
+      "name": "Shyam",
+      "age": 28
+    }
+  ]
+}</pre>
+
+            </div>
+
+
+            <div class="code-example">
+
+                <div class="code-header">
+                    Multidimensional Array
+                </div>
+
+<pre>[
+  ["a", "b", "c"],
+  ["m", "n", "o"],
+  ["x", "y", "z"]
+]</pre>
+
+            </div>
+
+
+            <div class="danger-card">
+
+                🚫 <b>JSON Comments:</b>
+
+                <p>
+                    Standard JSON does not support comments.
+                </p>
+
+            </div>
+
+
+            <div class="diagram-note">
+                📌 <b>Examples:</b> Pages 17–20
+            </div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- REST -->
+        <!-- ============================= -->
+
+        <section class="content-section searchable" id="rest">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-number">11</span>
+                    <h2>REST API</h2>
+                </div>
+
+                <span class="importance">
+                    ⭐⭐⭐⭐⭐ Must Know
+                </span>
+
+            </div>
+
+
+            <div class="definition-card rest-card">
+
+                <div class="definition-icon">
+                    🌐
+                </div>
+
+                <div>
+
+                    <h3>
+                        REpresentational State Transfer
+                    </h3>
+
+                    <p>
+                        REST is an architectural style for
+                        communication between computer systems
+                        over the web.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="rest-flow">
+
+                <div>
+                    👤
+                    <span>Client</span>
+                </div>
+
+                <strong>→</strong>
+
+                <div>
+                    🌐
+                    <span>HTTP</span>
+                </div>
+
+                <strong>→</strong>
+
+                <div>
+                    🖥️
+                    <span>Server</span>
+                </div>
+
+                <strong>→</strong>
+
+                <div>
+                    📦
+                    <span>JSON</span>
+                </div>
+
+            </div>
+
+
+            <h3 class="subheading">
+                REST Constraints
+            </h3>
+
+
+            <div class="constraint-grid">
+
+                <div>
+                    <span>01</span>
+                    <h3>Separation</h3>
+                    <p>
+                        Client and server can be developed independently.
+                    </p>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <h3>Statelessness</h3>
+                    <p>
+                        Server does not depend on previous client requests.
+                    </p>
+                </div>
+
+                <div>
+                    <span>03</span>
+                    <h3>Cacheability</h3>
+                    <p>
+                        Responses can be cached to improve performance.
+                    </p>
+                </div>
+
+                <div>
+                    <span>04</span>
+                    <h3>Uniform Interface</h3>
+                    <p>
+                        Uses a standard interface for communication.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="diagram-note">
+                📌 <b>REST diagrams:</b> Pages 20–23
+            </div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- UNIFORM INTERFACE -->
+        <!-- ============================= -->
+
+        <section class="content-section searchable">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-number">12</span>
+                    <h2>Uniform Interface</h2>
+                </div>
+
+            </div>
+
+
+            <div class="uniform-grid">
+
+                <div>
+                    <b>01</b>
+                    <h3>Identification of Resources</h3>
+                    <p>
+                        Resources are identified by unique URIs.
+                    </p>
+                </div>
+
+                <div>
+                    <b>02</b>
+                    <h3>Resource Manipulation</h3>
+                    <p>
+                        Resources are manipulated through
+                        representations such as JSON or XML.
+                    </p>
+                </div>
+
+                <div>
+                    <b>03</b>
+                    <h3>Self-Descriptive Messages</h3>
+                    <p>
+                        Messages contain enough information to
+                        understand and process them.
+                    </p>
+                </div>
+
+                <div>
+                    <b>04</b>
+                    <h3>HATEOAS</h3>
+                    <p>
+                        Hypermedia As The Engine Of Application State.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="memory-card">
+
+                🧠 <b>Trick:</b>
+
+                <span>I</span>
+                <span>R</span>
+                <span>S</span>
+                <span>H</span>
+
+                <small>
+                    Identification → Representation → Self-descriptive → HATEOAS
+                </small>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- HTTP -->
+        <!-- ============================= -->
+
+        <section class="content-section searchable" id="http">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-number">13</span>
+                    <h2>REST Communication & HTTP Methods</h2>
+                </div>
+
+                <span class="importance">
+                    ⭐⭐⭐⭐⭐ Must Know
+                </span>
+
+            </div>
+
+
+            <div class="request-card">
+
+                <h3>REST Request contains:</h3>
+
+                <div class="request-items">
+
+                    <span>① HTTP Verb</span>
+                    <span>② Header</span>
+                    <span>③ Path</span>
+                    <span>④ Optional Body</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="http-methods">
+
+                <div class="method get">
+
+                    <span>GET</span>
+
+                    <h3>Retrieve</h3>
+
+                    <p>
+                        Retrieves a resource or collection.
+                    </p>
+
+                    <code>GET /students/10</code>
+
+                </div>
+
+
+                <div class="method post">
+
+                    <span>POST</span>
+
+                    <h3>Create</h3>
+
+                    <p>
+                        Creates a new resource.
+                    </p>
+
+                    <code>POST /students</code>
+
+                </div>
+
+
+                <div class="method put">
+
+                    <span>PUT</span>
+
+                    <h3>Update</h3>
+
+                    <p>
+                        Updates a specific resource.
+                    </p>
+
+                    <code>PUT /students/10</code>
+
+                </div>
+
+
+                <div class="method delete">
+
+                    <span>DELETE</span>
+
+                    <h3>Delete</h3>
+
+                    <p>
+                        Removes a specific resource.
+                    </p>
+
+                    <code>DELETE /students/10</code>
+
+                </div>
+
+            </div>
+
+
+            <div class="mega-memory">
+
+                <h3>🧠 HTTP Trick</h3>
+
+                <div>
+
+                    <span>GET</span>
+                    <b>Get</b>
+
+                    <span>POST</span>
+                    <b>Create</b>
+
+                    <span>PUT</span>
+                    <b>Update</b>
+
+                    <span>DELETE</span>
+                    <b>Remove</b>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- MIME -->
+        <!-- ============================= -->
+
+        <section class="content-section searchable">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-number">14</span>
+                    <h2>MIME Types</h2>
+                </div>
+
+            </div>
+
+
+            <div class="mime-intro">
+
+                <b>MIME</b> =
+                Multipurpose Internet Mail Extensions
+
+                <br><br>
+
+                Format:
+
+                <strong>type/subtype</strong>
+
+            </div>
+
+
+            <div class="mime-grid">
+
+                <div>
+                    <span>HTML</span>
+                    <code>text/html</code>
+                </div>
+
+                <div>
+                    <span>CSS</span>
+                    <code>text/css</code>
+                </div>
+
+                <div>
+                    <span>PNG</span>
+                    <code>image/png</code>
+                </div>
+
+                <div>
+                    <span>JPEG</span>
+                    <code>image/jpeg</code>
+                </div>
+
+                <div>
+                    <span>JSON</span>
+                    <code>application/json</code>
+                </div>
+
+                <div>
+                    <span>PDF</span>
+                    <code>application/pdf</code>
+                </div>
+
+                <div>
+                    <span>XML</span>
+                    <code>application/xml</code>
+                </div>
+
+                <div>
+                    <span>MP4</span>
+                    <code>video/mp4</code>
+                </div>
+
+            </div>
+
+
+            <div class="example-box">
+
+                <div class="example-title">
+                    📩 Accept Header
+                </div>
+
+<pre>Accept: application/json</pre>
+
+                <p>
+                    Means the client can accept JSON data from the server.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- PATHS -->
+        <!-- ============================= -->
+
+        <section class="content-section searchable">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-number">15</span>
+                    <h2>REST Paths</h2>
+                </div>
+
+            </div>
+
+
+            <div class="path-example">
+
+<pre>/customers/223/orders/12</pre>
+
+                <div class="path-break">
+
+                    <span>
+                        customers
+                        <small>Resource</small>
+                    </span>
+
+                    <b>/</b>
+
+                    <span>
+                        223
+                        <small>Customer ID</small>
+                    </span>
+
+                    <b>/</b>
+
+                    <span>
+                        orders
+                        <small>Nested resource</small>
+                    </span>
+
+                    <b>/</b>
+
+                    <span>
+                        12
+                        <small>Order ID</small>
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="two-paths">
+
+                <div>
+
+                    <h3>Collection</h3>
+
+                    <code>/customers</code>
+
+                    <p>
+                        Represents a collection of customers.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <h3>Individual Resource</h3>
+
+                    <code>/customers/223</code>
+
+                    <p>
+                        Represents customer with ID 223.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="diagram-note">
+                📌 <b>Path explanation:</b> Page 26
+            </div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- RESPONSE -->
+        <!-- ============================= -->
+
+        <section class="content-section searchable">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-number">16</span>
+                    <h2>Sending Responses</h2>
+                </div>
+
+            </div>
+
+
+            <div class="response-example">
+
+                <div class="request-side">
+
+                    <span>REQUEST</span>
+
+<pre>GET /articles/23 HTTP/1.1
+
+Accept:
+text/html,
+application/xhtml</pre>
+
+                </div>
+
+
+                <div class="big-arrow">
+                    →
+                </div>
+
+
+                <div class="response-side">
+
+                    <span>RESPONSE</span>
+
+<pre>HTTP/1.1 200 OK
+
+Content-Type:
+text/html</pre>
+
+                </div>
+
+            </div>
+
+
+            <p class="simple-note">
+                The server should send a Content-Type that is
+                compatible with the client's Accept field.
+            </p>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- STATUS CODES -->
+        <!-- ============================= -->
+
+        <section class="content-section searchable">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-number">17</span>
+                    <h2>HTTP Response Codes</h2>
+                </div>
+
+                <span class="importance">
+                    ⭐⭐⭐⭐⭐ Must Memorize
+                </span>
+
+            </div>
+
+
+            <div class="status-grid">
+
+                <div class="status success">
+
+                    <strong>200</strong>
+
+                    <h3>OK</h3>
+
+                    <p>
+                        Successful HTTP request.
+                    </p>
+
+                </div>
+
+
+                <div class="status created">
+
+                    <strong>201</strong>
+
+                    <h3>CREATED</h3>
+
+                    <p>
+                        Resource successfully created.
+                    </p>
+
+                </div>
+
+
+                <div class="status nocontent">
+
+                    <strong>204</strong>
+
+                    <h3>NO CONTENT</h3>
+
+                    <p>
+                        Successful request with no response body.
+                    </p>
+
+                </div>
+
+
+                <div class="status bad">
+
+                    <strong>400</strong>
+
+                    <h3>BAD REQUEST</h3>
+
+                    <p>
+                        Invalid request/client error.
+                    </p>
+
+                </div>
+
+
+                <div class="status forbidden">
+
+                    <strong>403</strong>
+
+                    <h3>FORBIDDEN</h3>
+
+                    <p>
+                        Client has no permission.
+                    </p>
+
+                </div>
+
+
+                <div class="status notfound">
+
+                    <strong>404</strong>
+
+                    <h3>NOT FOUND</h3>
+
+                    <p>
+                        Resource does not exist.
+                    </p>
+
+                </div>
+
+
+                <div class="status server">
+
+                    <strong>500</strong>
+
+                    <h3>SERVER ERROR</h3>
+
+                    <p>
+                        Unexpected server-side failure.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="success-table">
+
+                <h3>⭐ Expected Success Codes</h3>
+
+                <div>
+                    <span>GET</span>
+                    <b>200 OK</b>
+                </div>
+
+                <div>
+                    <span>POST</span>
+                    <b>201 CREATED</b>
+                </div>
+
+                <div>
+                    <span>PUT</span>
+                    <b>200 OK</b>
+                </div>
+
+                <div>
+                    <span>DELETE</span>
+                    <b>204 NO CONTENT</b>
+                </div>
+
+            </div>
+
+
+            <div class="diagram-note">
+                📌 <b>Status-code table:</b> Pages 27–28
+            </div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- QUICK REVISION -->
+        <!-- ============================= -->
+
+        <section class="content-section revision-section searchable" id="revision">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-number">18</span>
+                    <h2>🔥 Quick Revision</h2>
+                </div>
+
+            </div>
+
+
+            <div class="revision-grid">
+
+                <div>
+
+                    <span>FULL STACK</span>
+
+                    <p>
+                        Front-End + Back-End + Database
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <span>3-TIER</span>
+
+                    <p>
+                        Presentation → Business → Data Access
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <span>MEAN</span>
+
+                    <p>
+                        MongoDB + Express + Angular + Node
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <span>MERN</span>
+
+                    <p>
+                        MongoDB + Express + React + Node
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <span>JSON</span>
+
+                    <p>
+                        JavaScript Object Notation
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <span>REST</span>
+
+                    <p>
+                        REpresentational State Transfer
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <span>HTTP</span>
+
+                    <p>
+                        GET → POST → PUT → DELETE
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <span>STATUS</span>
+
+                    <p>
+                        200 → 201 → 204 → 400 → 403 → 404 → 500
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="final-memory">
+
+                <div class="emoji">
+                    🧠
+                </div>
+
+                <h2>
+                    The Whole Unit in One Story
+                </h2>
+
+                <p>
+                    Build the <b>Front-End</b> → connect it to the
+                    <b>Back-End</b> → store data in the
+                    <b>Database</b> → organize everything using
+                    <b>3-Tier Architecture</b> → communicate using
+                    <b>REST APIs</b> → send data using
+                    <b>JSON</b> → use <b>HTTP methods</b> →
+                    receive <b>status codes</b>.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- QUIZ -->
+        <!-- ============================= -->
+
+        <section class="content-section quiz-section" id="quiz">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-number">19</span>
+                    <h2>🧠 Quick Quiz</h2>
+                </div>
+
+            </div>
+
+
+            <div id="quizContainer"></div>
+
+            <button id="nextQuestion" class="primary-btn quiz-btn">
+                Next Question →
+            </button>
+
+            <div id="quizResult"></div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- FOOTER -->
+        <!-- ============================= -->
+
+        <footer>
+
+            <div class="footer-logo">
+                FULL STACK <span>UNIT 1</span>
+            </div>
+
+            <p>
+                Study smart. Revise faster. Ace the exam. 🚀
+            </p>
+
+            <small>
+                Based on Unit-1 Full Stack Development Basics
+            </small>
+
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
